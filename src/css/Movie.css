@@ -51,7 +51,12 @@
 }
 #log {
     float: right;
+    display: inline-flex;
 }
 #btnLike{
     margin-left: 5px;
+    margin-right: 5px;
+}
+#dropdown-basic-agregarALista{
+  margin-left: 5px;
 }

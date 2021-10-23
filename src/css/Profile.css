@@ -25,3 +25,9 @@
   color: white;
   text-decoration: none;
 }
+.buscaImportar {
+  display: inline-flex;
+}
+.btnEditP {
+  margin-left: 5px;
+}

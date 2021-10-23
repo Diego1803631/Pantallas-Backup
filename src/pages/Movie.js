@@ -6,6 +6,8 @@ import ReactStars from 'react-stars'
 import { MdFavorite } from "react-icons/md";
 import { MdMode } from "react-icons/md";
 import { Button } from "react-bootstrap";
+import { Dropdown } from "react-bootstrap";
+import Comment from "../components/Comment"
 
 export default function Movie() {
     return (
@@ -22,13 +24,29 @@ export default function Movie() {
                     </div>
                     <ReactStars id="stars" count={5} size={24} edit={0} color1={'#ffa534'} />
                     <div id="log">
-                        <Button variant="outline-light">Reseñar</Button><Button id="btnLike" variant="outline-danger">Like</Button>
+                        <Button id="btnLike" variant="outline-danger">Like</Button><Button variant="outline-light" href="/CreateReview">Reseñar</Button>
+                        <Dropdown>
+                            <Dropdown.Toggle variant="outline-light" id="dropdown-basic-agregarALista">
+                                Agregar a lista
+                            </Dropdown.Toggle>
+
+                            <Dropdown.Menu>
+                                <Dropdown.Item href="#/action-1">Top peliculas 2020</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Top peliculas 2021</Dropdown.Item>
+                            </Dropdown.Menu>
+                        </Dropdown>
                     </div>
                 </div>
                 <label id="label2">Reseñas hechas por los usuarios de List Factory</label>
                 <hr className="hr"></hr>
                 <Review name="User1" image="https://www.w3schools.com/howto/img_avatar.png" />
+                <div class="comment">
+                    <Comment id="comment" name="User2" image="https://scme.mx/wp-content/uploads/2020/06/img_avatar2-2.png" />
+                </div>
                 <Review name="User2" image="https://scme.mx/wp-content/uploads/2020/06/img_avatar2-2.png" />
+                <div class="comment">
+                    <Comment id="comment" name="User1" image="https://www.w3schools.com/howto/img_avatar.png" />
+                </div>
             </Container>
         </Fragment>
     );

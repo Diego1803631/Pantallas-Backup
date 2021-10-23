@@ -7,6 +7,11 @@ import Lists from './pages/Lists';
 import Following from './pages/Following';
 import Followers from './pages/Followers';
 import ListInfo from './pages/ListInfo';
+import CreateList from './pages/CreateList';
+import CreateMovieOrSerie from './pages/CreateMovieOrSerie';
+import CreateReview from './pages/CreateReview';
+import CreateCategory from './pages/CreateCategory';
+import CreatePlatform from './pages/CreatePlatform';
 import MainNavbar from "../src/components/MainNavbar";
 import LogNavbar from "../src/components/LogNavbar";
 import Footer from "../src/components/Footer";
@@ -37,6 +42,11 @@ function App() {
         <Route exact path='/Following' component={Following} />
         <Route exact path='/Followers' component={Followers} />
         <Route exact path='/ListInfo' component={ListInfo} />
+        <Route exact path='/CreateList' component={CreateList} />
+        <Route exact path='/CreateMovieOrSerie' component={CreateMovieOrSerie} />
+        <Route exact path='/CreateReview' component={CreateReview} />
+        <Route exact path='/CreateCategory' component={CreateCategory} />
+        <Route exact path='/CreatePlatform' component={CreatePlatform} />
       </Switch>
       <Footer />
     </Router>

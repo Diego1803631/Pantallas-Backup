@@ -14,7 +14,7 @@ export default function ListInfo() {
                 <div id="profileinfo">
                     <Image id="profile" src="https://i.pinimg.com/originals/6c/0f/56/6c0f56bbe60aa6c72f384215326a0ca3.jpg" />
                     <p id="username">UserName <MdBeenhere /></p>
-                    <Button className="btnEntrar" variant="light">Ir al Perfil</Button>
+                    <Button className="btnSeguir" variant="light" href="/Profile">Ir al Perfil</Button>
                 </div>
                 <hr className="hr"></hr>
                 <h6 id="listitle">Top películas 2021</h6><label id="label">5</label>
@@ -25,7 +25,7 @@ export default function ListInfo() {
                     <CardList num="4" name="Malignant" img="https://images.moviefit.me/t/o/384878-malignant.jpg" />
                     <CardList num="5" name="The Suicide Squad" img="https://cloudfront-us-east-1.images.arcpublishing.com/copesa/5NVN6IJQGVF4RIPHO63NCEMTA4.jpeg" />
                 </CardGroup>
-                <Button id="btnEdit" variant="outline-light">Editar</Button>
+                <Button id="btnEdit" variant="outline-light" href="/CreateList">Editar</Button>
             </Container>
         </Fragment>
     );
